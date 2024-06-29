@@ -72,10 +72,25 @@ footer {
     gap: 10px;
 }
 
-#messages_area footer input {
+#messages_area footer input[type="text"] {
     flex-grow: 1;
     height: 50%;
     font-size: large;
+}
+
+#messages_area footer input[type="file"] {
+    display: none;
+    /* flex-grow: 1; */
+    /* width: 50px; */
+    /* height: 50px; */
+    /* font-size: large; */
+}
+
+.custom-file-upload {
+    width: 50px;
+    height: 50px;
+    background-color: lightgray;
+    border-radius: 5px;
 }
 
 #messages_area footer button {

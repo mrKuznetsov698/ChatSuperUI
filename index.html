@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Chat!</title>
-        <script src="mithril.js"></script>
+        <!-- <script src="static/js/mithril.js"></script> -->
         <script src="index.js"></script>
         <link href="styles.css" rel="stylesheet">
     </head>
@@ -13,7 +13,7 @@
             <div id="chats" class="">
                 <header>
                     <div class="placeholder"></div>
-                    <img src="frosya.jpg" width="70px" height="70px">
+                    <img src="static/imgs/frosya.jpg" width="70px" height="70px">
                     <div class="info centered_children">
                         <h1>Arseny</h1>
                     </div>
@@ -24,12 +24,16 @@
                 <footer class="centered_children">
                     <div class="placeholder"></div>
                     <input type="text">
-                    <button><img src="send.png" width="50px" height="50px"></button>
+                    <input type="file" id="file-upload">
+                    <label for="file-upload" class="custom-file-upload">
+                        <img src="static/imgs/include_file.png" style="width: 100%; height: 100%;">
+                    </label>
+                    <button type="submit"><img src="static/imgs/send.png" width="50px" height="50px"></button>
                     <div class="placeholder"></div>
                 </footer>
                 <div id="messages">
                     <div class="message">
-                        <img src="frosya.jpg">
+                        <img src="static/imgs/frosya.jpg">
                         <div class="content">Hello!</div>
                     </div>
                 </div>
